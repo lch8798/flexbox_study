@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .container header {
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .container section {
+            display: flex;
+        }
+        .container section nav {
+            border-right: 1px solid #ddd;
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        .container section main {
+        }
+        .container section aside {
+            border-left: 1px solid #ddd;
+            flex-basis: 150px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .container footer {
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 40px;
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>menu 1</li>
+                    <li>menu 2</li>
+                    <li>menu 3</li>
+                </ul>
+            </nav>
+            <main>
+                    The holy grail refers to a web page layout which has multiple, equal height columns that
+                    are defined with style sheets. It is commonly desired and implemented, but for many years, 
+                    the various ways in which it could be implemented with the current technologies all had drawbacks.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HolyGrail.svg/220px-HolyGrail.svg.png" alt=""><br>
+                    [1] Because of this, finding an optimal implementation was likened to searching for the elusive Holy Grail.
+                    The limitations of CSS and HTML, the desirability of semantically meaningful pages that rank well in search engines, 
+                    and the deficiencies of various browsers combined historically to create a situation in which there was no way to create
+                    this type of layout that would be considered totally correct. As the underlying technologies did not provide a proper solution, 
+                    web designers found various ways to work around the limitations. Common workarounds included changes in page structure, 
+                    the addition of graphics, scripting, and the creative use of CSS. These methods were imperfect, inconvenient, 
+                    and considered by some to be abuse of the web standards and their intent.
+                    More recent web standards have provided much more complete and robust solutions for implementing
+                    this layout. In particular, the CSS Flexible Box Layout and CSS Grid Layout modules have both provided full solutions.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section class="content">
+        <footer>
+            <address>Footer</address>
+        </footer>
+    </div>
+</body>
+</html>
